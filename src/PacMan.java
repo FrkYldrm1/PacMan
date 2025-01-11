@@ -75,6 +75,13 @@ public class PacMan extends JPanel{
     HashSet<Block> foods;
     HashSet<Block> ghosts;
     Block pacman;
+    
+    Timer gameLoop;
+    char[] directions = { 'U', 'D', 'L', 'R' }; // up down left right
+    Random random = new Random();
+    int score = 0;
+    int lives = 3;
+    boolean gameOver = false;
 
 
 
@@ -104,11 +111,12 @@ public class PacMan extends JPanel{
 
         for (int r =0; r < rowCount; r++){
             for (int c = 0; c < columnCount; c++){
-                
+
         }
 
 
 
     }
 
+}
 }
